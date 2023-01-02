@@ -2,7 +2,7 @@ import { useContext, useState, useRef } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import styled from "styled-components";
 
-const Home = () => {
+const Home = ({ setUser }) => {
     const { mode, changeTheme } = useContext(ThemeContext);
     const [empty, setEmpty] = useState(false);
     const [notFound, setNotFound] = useState(false);
